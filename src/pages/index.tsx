@@ -4,7 +4,6 @@ import Expenses from "./Expenses";
 
 import NavBar from "../components/Navbar/NavbarComp"
 import Home from "./Home";
-import PrivateRoute from "./PrivateRoute";
 import Login from "./Login";
 
 const AppRouter = () => {
@@ -16,7 +15,7 @@ const AppRouter = () => {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/login" element={<Login />} />
-                    <PrivateRoute path="/expenses" component={<Expenses />} />
+                    <Route path="/expenses" element={<Expenses />} />
                 </Routes>
             </BrowserRouter>
         </>

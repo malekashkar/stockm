@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
+import Link from "next/link";
 
 export const Sidebar = styled.div`
     height: 100%;
@@ -14,7 +15,7 @@ export const Sidebar = styled.div`
     transition: 0.5s;
 `;
 
-export const SidebarItem = styled.a`
+export const SidebarItem = styled(Link)`
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;

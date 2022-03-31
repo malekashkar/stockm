@@ -1,9 +1,9 @@
 import { Component } from 'react'
 import AuthContext from './contexts/Auth';
-import AppRouter from './routes';
+import AppRouter from './pages';
 import { UserResponse } from './types';
-import GlobalStyles from "./routes/GlobalStyles";
-import { Error, ErrorContainer } from "./routes/GlobalStyles";
+import GlobalStyles from "./pages/GlobalStyles";
+import { Error, ErrorContainer } from "./pages/GlobalStyles";
 
 import './App.css';
 import Spinner from './components/Spinner';
